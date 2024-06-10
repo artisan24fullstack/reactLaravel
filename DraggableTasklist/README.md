@@ -101,5 +101,44 @@ php artisan serve
 ## Frontend: Install the Packages
 
 ```
-php artisan serve
+npm i react-dom dotenv react-beautiful-dnd react-responsive-modal react-toastify @vitejs/plugin-react
+
+npm i -D @types/react-dom @types/react-beautiful-dnd
 ```
+
+## A Service for the API Requests
+ 
+ - Just create (axiosConfig.ts) for the global Axios configuration
+  
+```
+import axios from 'axios';
+
+export default axios.create({ baseURL: '/api' });
+```
+
+- So below is the utils.ts file:
+
+> getErrorMessage: 
+- Returns the error message if the input is an instance of Error – otherwise, converts it to a string.
+
+> getTasks: 
+- Retrieves tasks for a given project ID using Axios. 
+- Displays an error toast if the project ID is missing or if the API request is unsuccessful.
+
+> reorderTasks: 
+- Sends a PUT request to reorder tasks within a project based on start and end positions. 
+- Displays a success or error toast based on the API response.
+  
+> editTask: 
+- Sends a PUT request to update task information. 
+- Validates that the task has an ID and a title before making the request. 
+- Displays a success or error toast based on the API response.
+
+> deleteTask: 
+- Sends a DELETE request to delete a task by its ID. 
+- Displays a success or error toast based on the API response.
+
+> createTask: 
+- Sends a POST request to create a new task for a given project ID. 
+- Validates that the project ID is present, and the task has a title before making the request. 
+- Displays a success or error toast based on the API response.

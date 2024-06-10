@@ -14,3 +14,12 @@ php artisan make:seeder ProjectsSeeder
 
 php artisan make:seeder TasksSeeder
 ```
+
+
+## Database / Seeders
+```
+php artisan optimize
+
+php artisan migrate:fresh --seed
+
+```

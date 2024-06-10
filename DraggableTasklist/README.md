@@ -56,3 +56,15 @@ php artisan make:controller TaskController
 ```
 
 ## Web and API Routes
+
+## Validation Requests + rules / authorize true
+
+```
+php artisan make:request Task/CreateTaskRequest
+
+php artisan make:request Task/ListTasksRequest
+
+php artisan make:request Task/ReorderTasksRequest
+
+php artisan make:request Task/UpdateTaskRequest
+``` 

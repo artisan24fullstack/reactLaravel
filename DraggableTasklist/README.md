@@ -6,3 +6,11 @@ php artisan make:model Project -m
 
 php artisan make:model Task -m
  ```
+
+## How to Create Seeders
+
+```
+php artisan make:seeder ProjectsSeeder
+
+php artisan make:seeder TasksSeeder
+```

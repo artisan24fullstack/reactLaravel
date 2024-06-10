@@ -10,6 +10,17 @@ body {
     margin: auto 0;
 }
 
+header{
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;}
+.h1, .p{
+    margin: 1rem auto;
+    color: black;
+    text-align: center;
+}
+
 /* MODAL start */
 .modal-content {
     display: flex;

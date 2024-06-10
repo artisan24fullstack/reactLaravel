@@ -142,3 +142,14 @@ export default axios.create({ baseURL: '/api' });
 - Sends a POST request to create a new task for a given project ID. 
 - Validates that the project ID is present, and the task has a title before making the request. 
 - Displays a success or error toast based on the API response.
+
+
+## React Components
+
+## Final Results
+
+- By visiting http://127.0.0.1:8000
+  
+```
+npm run build && php artisan serve
+```

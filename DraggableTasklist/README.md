@@ -54,3 +54,5 @@ php artisan make:controller TaskController
 > reorder: 
 - changes the priorities of tasks within a project, (handles soft delete as well with deleted_at IS NULL).
 ```
+
+## Web and API Routes

@@ -70,3 +70,36 @@ php artisan make:request Task/UpdateTaskRequest
 ``` 
 
 ## Write a Controller that Uses Services
+
+## Test the API Routes with postman
+
+```
+php artisan serve
+```
+- Task Management API
+
+> List Tasks
+- http://localhost:8000/api/tasks?project_id=1
+
+> Get Task
+- http://localhost:8000/api/tasks/1
+
+> Create Task
+- http://localhost:8000/api/tasks?project_id=1
+
+> Update Task
+- http://localhost:8000/api/tasks/11
+
+> Delete Task
+- http://localhost:8000/api/tasks/11
+
+> Reorder Tasks 
+- http://localhost:8000/api/tasks
+
+
+
+## Frontend: Install the Packages
+
+```
+php artisan serve
+```
